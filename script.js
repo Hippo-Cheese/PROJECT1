@@ -38,4 +38,7 @@ async function fetchCharacter() {
 
   // Append the character info to the container
   characterInfoContainer.appendChild(characterContainer);
+
+  // Show the character info container
+  characterInfoContainer.style.display = 'block';
 }
