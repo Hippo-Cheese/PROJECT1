@@ -1,5 +1,3 @@
-
-
 document.getElementById("fetchCharacter").addEventListener("click", fetchCharacter);
 
 async function fetchCharacter() {
@@ -11,7 +9,7 @@ async function fetchCharacter() {
 
   if (!response.ok) {
     const errorMessage = `Error: ${response.status}`;
-    document.getElementById("characterInfo").innerText = errorMessage;
+    document.getElementById("characterInfoContainer").innerText = errorMessage;
     throw new Error(errorMessage);
   }
 
@@ -27,5 +25,17 @@ async function fetchCharacter() {
     <p>Death: ${character.death}</p>
   `;
 
-  document.getElementById("characterInfo").innerHTML = characterInfo;
+  // Create a new div to hold the character info
+  const characterContainer = document.createElement('div');
+  characterContainer.classList.add('character-container'); // Add a class for styling
+  characterContainer.innerHTML = characterInfo;
+
+  // Find the parent element to append the character info
+  const characterInfoContainer = document.getElementById("characterInfoContainer");
+
+  // Clear any existing character info
+  characterInfoContainer.innerHTML = '';
+
+  // Append the character info to the container
+  characterInfoContainer.appendChild(characterContainer);
 }
