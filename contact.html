@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0fdf177382.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="center-content">
+<body>   
+    <header>
         <h1>My Portfolio</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -16,54 +17,47 @@
             <a href="contact.html">Contact</a>
             <a href="projects.html">Projects</a>
         </nav>
-    </div>
+    </header>
     
     <div class="container">
-        <div id="characterInfo" class="image-and-script">
-            <div class="image-container">
-                <img src="https://images.freeimages.com/images/large-previews/bc4/curious-bird-1-1374322.jpg" width="500" height="500">
-            </div>
-            <button id="fetchCharacter">Click for Lord of the Rings Info</button>
-            <div id="characterInfoContainer" class="character-info-container">
-                <div class="container2">
-                    <input type="text" placeholder="Please feel free to contact me on">
-                </div>
-               
-            </div>
+        <img class="index-pic" src="https://images.freeimages.com/images/large-previews/bc4/curious-bird-1-1374322.jpg" alt="Curious Bird">
+        <button id="fetchCharacter">Click for Lord of the Rings Info</button>
+        <div id="characterInfoContainer" class="character-info-container">
+            <input type="text" placeholder="Contact information">
         </div>
+        
         <div class="phone-container">
             <h2 class="phone-heading">Call Me</h2>
             <ul class="phone-list">
                 <li><a href="tel:+01275-543668">Office Hours</a></li>
                 <li><a href="tel:+01275-665555">Out of Office</a></li>
             </ul>
-            </div>
-            <div class="address-container">
-                <h2 class="address-heading">Visit Us</h2>            
-                
-                <div class="flex-container">
-                    <p>Scan the Qr code for directtions to  our Address</p>                                       
-                        <div class="image-container">
-                            <img src="qr.png" alt="Image" class="image2" id="expandImage">
-                          </div>
-                          
-                    </div>
-                </div>
-                
-            </div>
+        </div>
         
+        <div class="address-container">
+            <h3 class="address-heading">Visit Us</h3>            
+            <div class="flex-container">
+                <p>Scan the QR code for directions to our address</p>                                       
+                <div class="image-container">
+                    <img src="qr.png" alt="QR Code" class="image2" id="expandImage">
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <footer class="footer">
-        <div class="container3">
-            <p>Thank you for visiting our website!</p>
-            <hr>
+        <div class="container">
+            <p>Thank you for visiting our website!</p>        
             <div class="social-icons">
-                <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
-                <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
-                <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/your_instagram" target="_blank"><img class="icon" src="insta.ico" alt="Instagram" /></a>      
+                <a href="https://www.reddit.com/r/your_subreddit" target="_blank"><img class="icon" src="reddit.ico" alt="Reddit" /></a>           
+                <a href="https://www.facebook.com/your_facebook" target="_blank"><img class="icon" src="facebook.ico" alt="Facebook" /></a>        
+                <a href="https://www.linkedin.com/in/your_linkedin" target="_blank"><img class="icon" src="link.ico" alt="LinkedIn" /></a>        
             </div>
         </div>
     </footer>
     
-    <script src="script.js"></script>
+    
+
 </body>
 </html>
