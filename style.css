@@ -218,7 +218,7 @@ nav a:hover {
 }
 
 #qrcode img {
-    max-width: 200px; /* Adjust as needed */
+    max-width: 200px; 
     height: auto;
     margin-top: 20px;
 }

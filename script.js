@@ -42,3 +42,16 @@ async function fetchCharacter() {
   // Show the character info container
   characterInfoContainer.style.display = 'block';
 }
+window.addEventListener('load', function() {
+  const image = document.getElementById('expandImage');
+
+  // Add an event listener for when the mouse enters the image
+  image.addEventListener('mouseenter', function() {
+    image.style.transform = 'scale(1.3)'; // Scale up on mouse enter
+  });
+
+  // Add an event listener for when the mouse leaves the image
+  image.addEventListener('mouseleave', function() {
+    image.style.transform = 'scale(0.5)'; // Scale back to original size
+  });
+});
