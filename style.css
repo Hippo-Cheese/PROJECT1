@@ -190,15 +190,35 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 800px; /* Adjust as needed */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 .video-container .content {
-    margin-top: 20px; /* Adjust spacing */
+    margin-top: 20px; 
 }
 
 .video-container video {
     width: 100%;
-    max-width: 500px; /* Adjust maximum width of the video */
+    max-width: 500px; 
+}
+.address-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.address-heading {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.address-container p {
+    color: white;
+}
+
+#qrcode img {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    margin-top: 20px;
 }
